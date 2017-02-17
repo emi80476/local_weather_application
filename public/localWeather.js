@@ -4,6 +4,8 @@
 
 $(document).ready(function() {
 
+	var currentLocation = {};
+
 	function geoLocationInit() {
 
 		if ("geolocation" in navigator) {
@@ -18,7 +20,6 @@ $(document).ready(function() {
 
 	}
 
-	var currentLocation = {};
 
 	function inputCoordinates(pos) {
 
@@ -79,52 +80,9 @@ $(document).ready(function() {
 
 	}
 
-
-
 	geoLocationInit();
 	
 
 });
 
-
-
-
-// $.getJSON('http://ipinfo.io', function(data){
-//   cityName = data.city;
-//   countryName = data.country;
-//   $('#location').text(cityName + ', ' + countryName);
-// });
-
-// var apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=Randolph,' + countryName + '&APPID=8c76ac4e605f564e0e370e04b8fd3714';
-// var iconUrl = "";
-// var tempFahrenheit = 75;
-// var tempCelsius = 24;
-
-// $.get(apiUrl , function(response) {
-//   iconUrl = "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png";
-  
-//   var img = document.createElement("IMG");
-//   img.src = iconUrl;
-//   var oldImg = document.getElementById('oldImg');
-  
-//   document.getElementById('imgDiv').replaceChild(img, oldImg);
-  
-//   var tempKelvin = response.main.temp;
-//   tempCelsius = tempKelvin - 273.15;
-//   tempFahrenheit = (tempKelvin - 273.15) * 1.8 + 32;
-  
-//   $('#tempCelsius').html(tempCelsius.toFixed(1) + " <sup>o</sup>C");
-  
-//   $('#tempFahrenheit').html(tempFahrenheit.toFixed(1) + " <sup>o</sup>F");
-  
-//   $('#toggleF').on('click', function(){
-//     $('#fahrenheit').toggle();
-//     $('#celsius').toggle();
-//   });
-  
-//   $('#toggleC').on('click', function(){
-//     $('#fahrenheit').toggle();
-//     $('#celsius').toggle();
-//   });
-// });
  
