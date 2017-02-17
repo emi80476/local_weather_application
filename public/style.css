@@ -1,0 +1,34 @@
+header {
+  margin: 20px;
+  font-size: 64px;
+}
+body {
+  background-color: #4099ff;
+  margin: 8% auto auto auto;
+  width: 80%;
+  text-align: center;
+  font-size: 24px;
+  font-family: Helvetica;
+  color: #292f33
+}
+
+footer {
+  margin: 20px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+#location {
+  margin: 10px;
+}
+
+#imgDiv {
+  background-color: #ffffff;
+  border-radius: 4px;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+}
